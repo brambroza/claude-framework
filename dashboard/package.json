@@ -1,0 +1,37 @@
+{
+  "name": "claude-framework-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3333",
+    "build": "next build",
+    "start": "next start -p 3333",
+    "db:migrate": "npx ts-node --esm --experimentalSpecifierResolution=node lib/db/migrate.ts",
+    "db:seed": "npx ts-node --esm --experimentalSpecifierResolution=node lib/db/seed.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "date-fns": "^3.6.0",
+    "dotenv": "^17.4.2",
+    "jose": "^6.2.3",
+    "lucide-react": "^0.383.0",
+    "mssql": "^10.0.4",
+    "next": "14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "recharts": "^2.12.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

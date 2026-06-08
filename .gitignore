@@ -1,0 +1,26 @@
+# Secrets
+clients/*/.env.claude
+clients/*/.env
+clients/pos-go
+*.local
+.env*
+!.env.example
+org/*/secrets/
+
+# Claude runtime
+.current-context
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+dashboard/
+node_modules/
+dashboard/node_modules/
+dashboard/.next/
+dist/
+build/
+.env

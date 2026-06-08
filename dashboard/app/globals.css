@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sarabun:wght@400;500;600&display=swap');
+
+body { font-family: 'Sarabun', 'Inter', sans-serif; }
+
+.stat-card { @apply bg-white rounded-xl border border-gray-100 p-5; }
+.section-title { @apply text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4; }
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium; }
+.btn { @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors; }
+.btn-primary { @apply btn bg-brand-500 text-white hover:bg-brand-600; }
+.btn-ghost { @apply btn text-gray-600 hover:bg-gray-100; }
+.priority-p1 { @apply badge bg-red-50 text-red-700; }
+.priority-p2 { @apply badge bg-amber-50 text-amber-700; }
+.priority-p3 { @apply badge bg-gray-100 text-gray-600; }
+.status-open { @apply badge bg-red-50 text-red-700; }
+.status-in-progress { @apply badge bg-blue-50 text-blue-700; }
+.status-done { @apply badge bg-green-50 text-green-700; }
+.status-todo { @apply badge bg-gray-100 text-gray-600; }
